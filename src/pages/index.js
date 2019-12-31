@@ -2,9 +2,31 @@ import React from "react";
 import SEO from "../components/seo";
 import hero from "../images/self.jpg";
 import "../static/css/profile.css";
+import "../static/css/custom.scss";
+import { Container, Row, Col } from "reactstrap";
 const SecondPage = () => (
   <>
     <SEO title="Home" />
+    <Container>
+      <Row className="main-content">
+        <Col xs="8">
+          <h1 className="huge">Hello,</h1>
+          <div>
+            <h1 className="bold huge">World.</h1>
+          </div>
+          <div className="subheading">
+            <p>
+              👋 Hi! this is <strong>Anubhav</strong>, I am here to tell you and
+              the world about my work and what I do.
+            </p>
+          </div>
+        </Col>
+        <Col xs="4">
+          <img src={hero} />
+        </Col>
+      </Row>
+    </Container>
+
     {/* <div className="navbar w-nav">
       <a
         href="http://uncommon-template.webflow.io/"
@@ -41,24 +63,19 @@ const SecondPage = () => (
       </div>
       <div className="w-nav-overlay" data-wf-ignore=""></div>
     </div> */}
-    <div className="hero">
-      <img
-        src="./Portfolio template - Webflow HTML website template_files/5b2a8936920a7989fd639958_arrow.svg"
-        alt=""
-        className="arrow"
-      />
+    {/* <div className="hero">
       <div className="wrapper-title">
-        <div style={{ float: "left" }}>
+        <div>
           <div className="_w-h1">
             <h1 className="main-h1 home">Hello,</h1>
           </div>
           <div className="_w-h1">
-            <h1 className="main-h1 bold home">You.</h1>
+            <h1 className="main-h1 bold home">World.</h1>
           </div>
           <div className="home-subhead">
             <p>
-              👋 Hi this is Anubhav, I am here to tell you and the world about
-              my work and what I do.
+              👋 Hi! this is s, I am here to tell you and the world about my
+              work and what I do.
             </p>
           </div>
         </div>
@@ -66,8 +83,7 @@ const SecondPage = () => (
           <img src={hero} width="40%" />
         </div>
       </div>
-      {/* <div className="wrapper-title"></div> */}
-    </div>
+    </div> */}
     {/* <div className="section main">
       <div className="w-dyn-list">
         <div className="w-dyn-items">
